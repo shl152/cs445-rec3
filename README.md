@@ -46,7 +46,7 @@ rely on simple print statements to verify that your methods work as expected.
 
 ## Exercise
 
-1. Download the provided code by forking and cloning this [Recitation 3
+1. Download the provided code by cloning this [Recitation 3
 repository](https://github.com/2217-cs445/cs445-rec3). The starting code for
 this exercise, as usual, is found in subdirectory `app/src/main/java/`. Navigate
 to this subdirectory, then into the `cs445/rec3/` package folder within it. Note
