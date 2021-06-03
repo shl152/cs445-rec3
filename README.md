@@ -111,12 +111,12 @@ bag. Here are some steps you may want to follow:
    - Consider what happens if the entry is not present in the bag, and any other
      forms of invalid input.
 
-6. Implement your algorithm as method `void removeDuplicates(E elem)` in both
+6. Implement your algorithm as method `void removeDuplicatesOf(E elem)` in both
 `ArrayBag` and `LinkedBag`. Some details may be different, but your overall
 approach should be very similar.
 
-7. Test your `removeDuplicates` method. You can run the provided tests using the
-gradle command given above. Correct any bugs you find.
+7. Test your `removeDuplicatesOf` method. You can run the provided tests using
+the gradle command given above. Correct any bugs you find.
 
    ------
 
