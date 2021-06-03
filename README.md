@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this recitation exercise, you explore the implementation of the ADT bag using
+In this recitation exercise, you will explore the implementation of the ADT bag using
 arrays and linked chains. You will override the `equals` method so that it will
 determine if two bags are equal based on their contents. You will then implement
 the `removeDuplicatesOf` method, which will remove any extra copies of a
@@ -46,7 +46,7 @@ rely on simple print statements to verify that your methods work as expected.
 
 ## Exercise
 
-1. Download the provided code by cloning this [Recitation 3
+1. Download the provided code by forking and cloning this [Recitation 3
 repository](https://github.com/2217-cs445/cs445-rec3). The starting code for
 this exercise, as usual, is found in subdirectory `app/src/main/java/`. Navigate
 to this subdirectory, then into the `cs445/rec3/` package folder within it. Note
@@ -94,9 +94,9 @@ is a compatible type.
 4. Test your `equals` method. You can run the provided tests automatically using
 gradle:
 
-   - `./gradlew run` (on Unix-like terminals such as those found on Mac, Linux,
+   - `./gradlew test` (on Unix-like terminals such as those found on Mac, Linux,
      or Windows Subsystem for Linux)
-   - `gradlew.bat run` (on DOS-like terminals such as the more traditional
+   - `gradlew.bat test` (on DOS-like terminals such as the more traditional
      Windows terminal)
 
    Correct any bugs you find.
