@@ -210,7 +210,15 @@ public final class LinkedBag<E> implements BagInterface<E> {
         // TODO: Rewrite this method so that it works according to the contents
         // of the bags (this and other). Be sure to consider if other is null,
         // or a type other than LinkedBag.
-        return this == other;
+        if(other==null){return false;}
+        if(!(other instanceof LinkedBag)){ return false;}
+        LinkedBag another=(LinkedBag)other;
+        if(another.getCurrentSize()!=this.getCurrentSize()){return false;}
+        for(Node current=head;current!=null;current=current.next){
+            if(this.getFrequencyOf(current.data)!=another.getFrequencyOf(current.data)){return false;}
+
+        }
+        return true;
     }
 
     /**
@@ -222,7 +230,21 @@ public final class LinkedBag<E> implements BagInterface<E> {
     public void removeDuplicatesOf(E anEntry) {
         // TODO: Write this method so that it removes all duplicate entries of
         // the given Entry from this bag while leaving the first instance of it
+        Node firstinstance=getReferenceTo(anEntry);
+        if(firstinstance!=null){
+      
+        for(Node current=firstinstance.next;current!=null;current=current.next){
+            if(anEntry.equals(current.data)){
+                current.data=head.data;
+                head=head.next;
+                size--;
+            }
+
+            }
+        }
+    
     }
+    
 
     /**
      * Removes all duplicate items from this bag, leaving one instance of each
@@ -232,6 +254,10 @@ public final class LinkedBag<E> implements BagInterface<E> {
     public void removeAllDuplicates() {
         // TODO: Write this method so that it removes all duplicate entries from
         // this bag
+        for(Node current=head;current!=null;current=current.next){
+            removeDuplicatesOf(current.data);
+        }
+
     }
 }
 
